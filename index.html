@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Redirecting...</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script>
+        // यहाँ पर आप वो वेबसाइट का URL रखेंगे जिसे आप बदलना चाहते हैं
+        // शुरुआत में यह आपकी पुरानी वेबसाइट होगी
+        let destinationUrl = "https://infoaios.ai/"; 
+
+        // जब यह पेज लोड होगा, तो यह उपयोगकर्ता को destinationUrl पर भेज देगा
+        window.onload = function() {
+            window.location.href = destinationUrl;
+        }
+    </script>
+</head>
+<body>
+    <h1>Redirecting you...</h1>
+    <p>If you are not redirected, <a id="redirectLink" href="">click here</a>.</p>
+    <script>
+        document.getElementById('redirectLink').href = destinationUrl;
+    </script>
+</body>
+</html>
